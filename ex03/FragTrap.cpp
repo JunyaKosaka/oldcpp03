@@ -5,11 +5,11 @@ void FragTrap::highFivesGuys() {
 }
 
 FragTrap::FragTrap() {
-	this->setName("FragTrap");
+	this->setName("fragTrap");
 	this->setHitPoints(FragTrap::max_hitpoints_);
 	this->setEnergyPoints(FragTrap::max_energy_points_);
 	this->setAttackDamage(FragTrap::init_attack_damage_);
-	std::cout << "FragTrap was born" << std::endl;
+	std::cout << "FragTrap " << this->name_ << " was born" << std::endl;
 }
 
 FragTrap::FragTrap(std::string name) {

@@ -6,7 +6,7 @@ void ScavTrap::guardGate() {
 }
 
 ScavTrap::ScavTrap() {
-	this->setName("ScavTrap");
+	this->setName("scavTrap");
 	this->setHitPoints(ScavTrap::max_hitpoints_);
 	this->setEnergyPoints(ScavTrap::max_energy_points_);
 	this->setAttackDamage(ScavTrap::init_attack_damage_);
