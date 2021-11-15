@@ -14,7 +14,6 @@ public:
 	ScavTrap(const ScavTrap &other);
 	ScavTrap &operator=(const ScavTrap &other);
 
-
 protected:
 	static const unsigned int	max_hitpoints_ = 100;
 	static const unsigned int	max_energy_points_ = 50;

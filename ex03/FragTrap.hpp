@@ -14,7 +14,6 @@ public:
 	FragTrap(const FragTrap &other);
 	FragTrap &operator=(const FragTrap &other);
 
-
 protected:
 	static const unsigned int	max_hitpoints_ = 100;
 	static const unsigned int	max_energy_points_ = 100;
