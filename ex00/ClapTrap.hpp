@@ -2,14 +2,13 @@
 #define CLAP_TRAP_HPP_
 
 #include <iostream>
-#include <string>
 
 class ClapTrap {
 
 public:
-	void					attack(std::string const &target);
-	void					takeDamage(unsigned int amount);
-	void					beRepaired(unsigned int amount);
+	void			attack(std::string const &target);
+	void			takeDamage(unsigned int amount);
+	void			beRepaired(unsigned int amount);
 
 	ClapTrap();
 	ClapTrap(std::string name);
@@ -27,10 +26,10 @@ public:
 	void			setAttackDamage(unsigned int amount);
 
 private:
-	std::string				name_;
-	unsigned int			hitpoints_;
-	unsigned int			energy_points_;
-	unsigned int			attack_damage_;
+	std::string		name_;
+	unsigned int	hitpoints_;
+	unsigned int	energy_points_;
+	unsigned int	attack_damage_;
 
 	static const unsigned int	max_hitpoints_ = 10;
 	static const unsigned int	max_energy_points_ = 10;
