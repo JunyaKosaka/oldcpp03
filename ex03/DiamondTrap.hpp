@@ -1,7 +1,7 @@
-#ifndef FRAG_TRAP_HPP_
-#define FRAG_TRAP_HPP_
+#ifndef DIAMOND_TRAP_HPP_
+#define DIAMOND_TRAP_HPP_
 
-#include "ClapTrap.hpp"
+// #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
@@ -18,11 +18,12 @@ public:
 	DiamondTrap &operator=(const DiamondTrap &other);
 
 
-// private:
+private:
+	std::string	name_;
 // 	static const unsigned int	max_hitpoints_ = 10;
 // 	static const unsigned int	max_energy_points_ = 10;
 // 	static const unsigned int	init_attack_damage_ = 0; 
 
 };
 
-#endif // FRAG_TRAP_HPP_
+#endif // DIAMOND_TRAP_HPP_

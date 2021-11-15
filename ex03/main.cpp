@@ -1,16 +1,18 @@
 #include <iostream>
 
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main( void ) {
-	FragTrap abc("abc");
-	FragTrap d1;
-	FragTrap cp1 = abc;
+	DiamondTrap abc("abc");
+	DiamondTrap d1;
 	
 	abc.attack(d1.getName());
-	cp1.takeDamage(2);
-	cp1.beRepaired(1);
+	abc.takeDamage(2);
+	abc.beRepaired(1);
 	abc.highFivesGuys();
+	abc.guardGate();
+	abc.whoAmI();
+	d1.whoAmI();
 
 	return 0;
 }

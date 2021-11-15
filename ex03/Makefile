@@ -1,7 +1,8 @@
 NAME = a.out
 CC = clang++
 STD = -std=c++98
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp \
+	FragTrap.cpp DiamondTrap.cpp
 
 FLAGS = -Wall -Wextra -Werror
 
