@@ -53,11 +53,8 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other) {
 }
 
 std::string		ClapTrap::getName() const { return this->name_; }
-
 unsigned int	ClapTrap::getHitPoints() const { return this->hitpoints_; }
-
 unsigned int	ClapTrap::getEnergyPoints() const { return this->energy_points_; }
-
 unsigned int	ClapTrap::getAttackDamage() const { return this->attack_damage_; }
 
 void			ClapTrap::setName(std::string name) { this->name_ = name; }
