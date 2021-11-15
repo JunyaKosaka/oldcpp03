@@ -22,7 +22,7 @@ ScavTrap::ScavTrap(std::string name) {
 }
 
 ScavTrap::~ScavTrap() {
-	std::cout << this->name_ << " died" << std::endl;
+	std::cout << "ScavTrap " << this->name_ << " died" << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &other) {
@@ -36,6 +36,6 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
 		this->energy_points_ = other.getEnergyPoints();
 		this->attack_damage_ = other.getAttackDamage();
 	}
-	std::cout << this->name_ << " was born" << std::endl;
+	std::cout << "ScavTrap " << this->name_ << " was born" << std::endl;
 	return *this;
 }

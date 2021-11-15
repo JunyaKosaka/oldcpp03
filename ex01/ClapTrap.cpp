@@ -28,11 +28,11 @@ ClapTrap::ClapTrap()
 ClapTrap::ClapTrap(std::string name)
 	: name_(name), hitpoints_(ClapTrap::max_hitpoints_), \
 	energy_points_(ClapTrap::max_energy_points_), attack_damage_(ClapTrap::init_attack_damage_) {
-	std::cout << this->name_ << " was born" << std::endl;
+	std::cout << "ClapTrap " << this->name_ << " was born" << std::endl;
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout <<  this->name_ << " died" << std::endl;
+	std::cout << "ClapTrap " << this->name_ << " died" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &other) {
