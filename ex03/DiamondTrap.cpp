@@ -19,7 +19,7 @@ DiamondTrap::DiamondTrap() : name_("DiamondTrap") {
 }
 
 DiamondTrap::DiamondTrap(std::string name) : name_(name) {
-	ClapTrap::setName(name + "_clap_name_");
+	ClapTrap::setName(name + "_clap_name");
 	this->FragTrap::setHitPoints(FragTrap::max_hitpoints_);
 	this->ScavTrap::setEnergyPoints(ScavTrap::max_energy_points_);
 	this->FragTrap::setAttackDamage(FragTrap::init_attack_damage_);

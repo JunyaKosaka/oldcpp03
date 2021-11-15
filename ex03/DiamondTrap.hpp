@@ -20,9 +20,6 @@ public:
 
 private:
 	std::string	name_;
-// 	static const unsigned int	max_hitpoints_ = 10;
-// 	static const unsigned int	max_energy_points_ = 10;
-// 	static const unsigned int	init_attack_damage_ = 0; 
 
 };
 
