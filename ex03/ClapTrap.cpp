@@ -14,15 +14,17 @@ void ClapTrap::takeDamage(unsigned int amount) {
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
-	std::cout << this->name_ << " is repaired " \
+	if (this->hitpoints_ + amount > ClapTrap::max_hitpoints_)
+		amount = max_hitpoints_ - hitpoints_;
+	std::cout << "ClapTrap " << this->name_ << " is repaired " \
 	<< amount << " points of damage" << std::endl;
 	this->hitpoints_ += amount;
 }
 
 ClapTrap::ClapTrap()
-	: name_("ClapTrap"), hitpoints_(ClapTrap::max_hitpoints_), \
+	: name_("clapTrap"), hitpoints_(ClapTrap::max_hitpoints_), \
 	energy_points_(ClapTrap::max_energy_points_), attack_damage_(ClapTrap::init_attack_damage_) {
-	std::cout << "ClapTrap was born" << std::endl;
+	std::cout << "ClapTrap " << this->name_ << " was born" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)

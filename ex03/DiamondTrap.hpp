@@ -17,7 +17,6 @@ public:
 	DiamondTrap(const DiamondTrap &other);
 	DiamondTrap &operator=(const DiamondTrap &other);
 
-
 private:
 	std::string	name_;
 

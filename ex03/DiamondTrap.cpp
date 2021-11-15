@@ -10,12 +10,12 @@ void DiamondTrap::attack(std::string const &target) {
 	this->ScavTrap::attack(target);
 }
 
-DiamondTrap::DiamondTrap() : name_("DiamondTrap") {
-	ClapTrap::setName("DiamondTrap_clap_name");
+DiamondTrap::DiamondTrap() : name_("diamondTrap") {
+	ClapTrap::setName("diamondTrap_clap_name");
 	this->FragTrap::setHitPoints(FragTrap::max_hitpoints_);
 	this->ScavTrap::setEnergyPoints(ScavTrap::max_energy_points_);
 	this->FragTrap::setAttackDamage(FragTrap::init_attack_damage_);
-	std::cout << "DiamondTrap was born" << std::endl;
+	std::cout << "DiamondTrap " << this->name_ << " was born" << std::endl;
 }
 
 DiamondTrap::DiamondTrap(std::string name) : name_(name) {
