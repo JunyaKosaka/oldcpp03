@@ -46,7 +46,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other) {
 		this->energy_points_ = other.getEnergyPoints();
 		this->attack_damage_ = other.getAttackDamage();
 	}
-	std::cout << this->name_ << " was born" << std::endl;
+	std::cout << "ClapTrap " << this->name_ << " was born" << std::endl;
 	return *this;
 }
 

@@ -9,7 +9,7 @@ class DiamondTrap : public ScavTrap, public FragTrap {
 
 public:
 	void		whoAmI();
-	void		attack();
+	void		attack(std::string const &target);
 
 	DiamondTrap();
 	DiamondTrap(std::string name);
@@ -18,10 +18,10 @@ public:
 	DiamondTrap &operator=(const DiamondTrap &other);
 
 
-private:
-	static const unsigned int	max_hitpoints_ = 10;
-	static const unsigned int	max_energy_points_ = 10;
-	static const unsigned int	init_attack_damage_ = 0; 
+// private:
+// 	static const unsigned int	max_hitpoints_ = 10;
+// 	static const unsigned int	max_energy_points_ = 10;
+// 	static const unsigned int	init_attack_damage_ = 0; 
 
 };
 
