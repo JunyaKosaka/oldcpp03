@@ -10,7 +10,7 @@ ScavTrap::ScavTrap() {
 	this->setHitPoints(ScavTrap::max_hitpoints_);
 	this->setEnergyPoints(ScavTrap::max_energy_points_);
 	this->setAttackDamage(ScavTrap::init_attack_damage_);
-	std::cout << "ScavTrap was born" << std::endl;
+	std::cout << "ScavTrap " << this->name_ << " was born" << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string name) {
