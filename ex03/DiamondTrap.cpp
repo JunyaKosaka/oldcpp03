@@ -42,7 +42,7 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &other) {
 		this->hitpoints_ = other.getHitPoints();
 		this->energy_points_ = other.getEnergyPoints();
 		this->attack_damage_ = other.getAttackDamage();
+		std::cout << "DiamondTrap " << this->name_ << " was born" << std::endl;
 	}
-	std::cout << "DiamondTrap " << this->name_ << " was born" << std::endl;
 	return *this;
 }
