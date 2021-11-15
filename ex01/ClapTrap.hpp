@@ -26,12 +26,13 @@ public:
 	void			setEnergyPoints(unsigned int amount);
 	void			setAttackDamage(unsigned int amount);
 
-private:
+protected:
 	std::string				name_;
 	unsigned int			hitpoints_;
 	unsigned int			energy_points_;
 	unsigned int			attack_damage_;
 
+private:
 	static const unsigned int	max_hitpoints_ = 10;
 	static const unsigned int	max_energy_points_ = 10;
 	static const unsigned int	init_attack_damage_ = 0; 
