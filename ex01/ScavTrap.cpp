@@ -7,7 +7,8 @@ void ScavTrap::guardGate() {
 
 ScavTrap::ScavTrap() {
 	this->setName("scavTrap");
-	this->setHitPoints(ScavTrap::max_hitpoints_);
+	this->setHitPoints(ScavTrap::init_max_hitpoints_);
+	this->setMaxHitPoints(ScavTrap::init_max_hitpoints_);
 	this->setEnergyPoints(ScavTrap::max_energy_points_);
 	this->setAttackDamage(ScavTrap::init_attack_damage_);
 	std::cout << "ScavTrap " << this->name_ << " was born" << std::endl;
@@ -15,7 +16,8 @@ ScavTrap::ScavTrap() {
 
 ScavTrap::ScavTrap(std::string name) {
 	this->setName(name);
-	this->setHitPoints(ScavTrap::max_hitpoints_);
+	this->setHitPoints(ScavTrap::init_max_hitpoints_);
+	this->setMaxHitPoints(ScavTrap::init_max_hitpoints_);
 	this->setEnergyPoints(ScavTrap::max_energy_points_);
 	this->setAttackDamage(ScavTrap::init_attack_damage_);
 	std::cout << "ScavTrap " << this->name_ << " was born" << std::endl;
@@ -33,6 +35,7 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
 	if (this != &other) {
 		this->setName(other.getName());
 		this->setHitPoints(other.getHitPoints());
+		this->setMaxHitPoints(other.getMaxHitPoints());
 		this->setEnergyPoints(other.getEnergyPoints());
 		this->setAttackDamage(other.getAttackDamage());
 		std::cout << "ScavTrap " << this->name_ << " was born" << std::endl;

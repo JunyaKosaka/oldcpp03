@@ -6,7 +6,8 @@ void FragTrap::highFivesGuys() {
 
 FragTrap::FragTrap() {
 	this->setName("fragTrap");
-	this->setHitPoints(FragTrap::max_hitpoints_);
+	this->setHitPoints(FragTrap::init_max_hitpoints_);
+	this->setMaxHitPoints(FragTrap::init_max_hitpoints_);
 	this->setEnergyPoints(FragTrap::max_energy_points_);
 	this->setAttackDamage(FragTrap::init_attack_damage_);
 	std::cout << "FragTrap " << this->name_ << " was born" << std::endl;
@@ -14,7 +15,8 @@ FragTrap::FragTrap() {
 
 FragTrap::FragTrap(std::string name) {
 	this->setName(name);
-	this->setHitPoints(FragTrap::max_hitpoints_);
+	this->setHitPoints(FragTrap::init_max_hitpoints_);
+	this->setMaxHitPoints(FragTrap::init_max_hitpoints_);	
 	this->setEnergyPoints(FragTrap::max_energy_points_);
 	this->setAttackDamage(FragTrap::init_attack_damage_);
 	std::cout << "FragTrap " << this->name_ << " was born" << std::endl;
@@ -30,11 +32,12 @@ FragTrap::FragTrap(const FragTrap &other) {
 
 FragTrap &FragTrap::operator=(const FragTrap &other) {
 	if (this != &other) {
-		this->name_ = other.getName();
-		this->hitpoints_ = other.getHitPoints();
-		this->energy_points_ = other.getEnergyPoints();
-		this->attack_damage_ = other.getAttackDamage();
+		this->setName(other.getName());
+		this->setHitPoints(other.getHitPoints());
+		this->setMaxHitPoints(other.getMaxHitPoints());
+		this->setEnergyPoints(other.getEnergyPoints());
+		this->setAttackDamage(other.getAttackDamage());
+		std::cout << "FragTrap " << this->name_ << " was born" << std::endl;
 	}
-	std::cout << "FragTrap " << this->name_ << " was born" << std::endl;
 	return *this;
 }
