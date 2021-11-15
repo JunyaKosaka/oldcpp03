@@ -30,6 +30,10 @@ private:
 	unsigned int			energy_points_;
 	unsigned int			attack_damage_;
 
+	static const unsigned int	max_hitpoints_ = 10;
+	static const unsigned int	max_energy_points_ = 10;
+	static const unsigned int	init_attack_damage_ = 0; 
+
 };
 
 #endif  // CLAP_TRAP_HPP_

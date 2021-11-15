@@ -20,12 +20,14 @@ void ClapTrap::beRepaired(unsigned int amount) {
 }
 
 ClapTrap::ClapTrap()
-	: name_("ClapTrap"), hitpoints_(10), energy_points_(10), attack_damage_(0) {
+	: name_("ClapTrap"), hitpoints_(ClapTrap::max_hitpoints_), \
+	energy_points_(ClapTrap::max_energy_points_), attack_damage_(ClapTrap::init_attack_damage_) {
 	std::cout << "ClapTrap was born" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)
-	: name_(name), hitpoints_(10), energy_points_(10), attack_damage_(0) {
+	: name_(name), hitpoints_(ClapTrap::max_hitpoints_), \
+	energy_points_(ClapTrap::max_energy_points_), attack_damage_(ClapTrap::init_attack_damage_) {
 	std::cout << "ClapTrap " << this->name_ << " was born" << std::endl;
 }
 
