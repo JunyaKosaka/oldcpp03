@@ -15,7 +15,7 @@ void ClapTrap::takeDamage(unsigned int amount) {
 
 void ClapTrap::beRepaired(unsigned int amount) {
 	if (this->hitpoints_ + amount > ClapTrap::max_hitpoints_)
-		amount = max_hitpoints_ - hitpoints_;
+		amount = ClapTrap::max_hitpoints_ - this->hitpoints_;
 	std::cout << "ClapTrap " << this->name_ << " is repaired " \
 	<< amount << " points of damage" << std::endl;
 	this->hitpoints_ += amount;
